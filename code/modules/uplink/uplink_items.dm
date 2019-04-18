@@ -536,9 +536,11 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	desc = "This scroll contains the secrets of an ancient martial arts technique. You will master unarmed combat, \
 			deflecting all ranged weapon fire, but you also refuse to use dishonorable ranged weaponry."
 	item = /obj/item/book/granter/martial/carp
-	cost = 17
-	// yogs changes
-	cost = 22
+	// yogs change
+	if(user.mind.has_antag_datum(/datum/antagonist/traitor/internal_affairs)
+		cost = 22
+	else
+		cost = 17
 	// end yogs changes
 	surplus = 0
 	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/nuclear/clown_ops)
