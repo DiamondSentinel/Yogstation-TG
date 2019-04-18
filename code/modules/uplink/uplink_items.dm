@@ -537,7 +537,7 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 			deflecting all ranged weapon fire, but you also refuse to use dishonorable ranged weaponry."
 	item = /obj/item/book/granter/martial/carp
 	// yogs change
-	if(user.mind.has_antag_datum(/datum/antagonist/traitor/internal_affairs)
+	if(user.mind.has_antag_datum(/datum/antagonist/traitor/internal_affairs))
 		cost = 22
 	else
 		cost = 17
