@@ -44,9 +44,10 @@
 	if(action)
 		action.UpdateButtonIcon()
 
-/obj/effect/proc_holder/spell/aoe_turf/holoparasite/
+/obj/effect/proc_holder/spell/aoe_turf/guardian/
 	human_req = FALSE
 	clothes_req = FALSE
 	antimagic_allowed = TRUE
 	invocation_type = TRUE
 	range = master_stats.potential //As a base, all holoparasite AoE spells have a range equal to their potential. 
+	panel = "Guardian"
