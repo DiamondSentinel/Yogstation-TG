@@ -35,8 +35,8 @@
 
 /obj/effect/proc_holder/spell/aoe_turf/guardian/graviton_wave/cast(list/targets,mob/user = usr)
 	for(var/mob/living/C in targets)
-			if(C != guardian && C != guardian.summoner?.current)
-				add_gravity(C, 4)
+		if(C != guardian && C != guardian.summoner?.current)
+			add_gravity(C, 4)
 		guardian.visible_message("<span class='danger'>A massive graviton wave emanates from [src]!</span>", "<span class='notice'>You modify the gravity around you.</span>")
 		playsound(guardian, 'sound/effects/gravhit.ogg', 100, TRUE)
 
